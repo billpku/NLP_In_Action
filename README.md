@@ -1,5 +1,5 @@
 # NLP In Action
-Share how to do NLP tasks with some SOTA techniques, looking forwards for feedbacks and suggestions ^-^ 
+Share how to do NLP tasks with some SOTA techniques, looking forwards for feedback and suggestion ^-^ 
 
 ## NER with BERT in Action
 Do Named Entity Recognition(NER) with google BERT model
