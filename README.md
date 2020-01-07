@@ -16,3 +16,7 @@ Do Text Classification with google&CMU XLNet model
 Do Text Generation with OpenAI's GPT-2 model
 - Post:[Text Generation with GPT-2 in Action](https://medium.com/@yingbiao/text-generation-with-gpt-2-in-action-174e0335e1f6)
 - Notebook:[Textgeneration_with_GPT2](https://github.com/billpku/NLP_In_Action/blob/master/Textgeneration_with_GPT2.ipynb) or [Textgeneration_with_GPT2](https://nbviewer.jupyter.org/github/billpku/NLP_In_Action/blob/master/Textgeneration_with_GPT2.ipynb)
+
+## TODO
+[X] Update to transformers library support 
+[ ] Add inference support
