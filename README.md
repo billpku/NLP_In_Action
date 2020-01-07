@@ -18,5 +18,5 @@ Do Text Generation with OpenAI's GPT-2 model
 - Notebook:[Textgeneration_with_GPT2](https://github.com/billpku/NLP_In_Action/blob/master/Textgeneration_with_GPT2.ipynb) or [Textgeneration_with_GPT2](https://nbviewer.jupyter.org/github/billpku/NLP_In_Action/blob/master/Textgeneration_with_GPT2.ipynb)
 
 ## TODO
-[X] Update to transformers library support 
-[ ] Add inference support
+- [X] Update to transformers library support 
+- [ ] Add inference support
