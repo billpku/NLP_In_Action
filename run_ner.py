@@ -21,16 +21,19 @@ from transformers import RobertaForTokenClassification, BertForTokenClassificati
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-d", "--data", type=str, help="dir of the data")
+parser.add_argument("-d", "--data", type=str, help="dir of the data (train, test, dev.test)")
 parser.add_argument('-n', '--dist_gpu', help="set if number of GPUs is more than one", action='store_true')
 parser.add_argument("-l", "--max_length", type=str, help="maximum lenght of sequence")
 parser.add_argument("-b", "--batch_number", type=str, help="batch number in a GPU")
+parser.add_argument("-e", "--epochs_number", type=str, help="number of epochs")
+
 
 args = parser.parse_args()
 data = args.data
 distrubuted_training = args.dist_gpu
 max_len = args.max_length
 batch_num = args.batch_number
+epochs = args.epochs_number
 
 # Fillna method can make same sentence with same sentence name
 def df_file(path):
@@ -176,7 +179,6 @@ model = BertForTokenClassification.from_pretrained(model_file_address, num_label
 
 if n_gpu > 1 and distrubuted_training:
     model = torch.nn.DataParallel(model)
-epochs = 20
 max_grad_norm = 1.0
 num_train_optimization_steps = int(math.ceil(len(tr_inputs) / batch_num) / 1) * epochs
 # False: only fine tuning the classifier layers
