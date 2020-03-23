@@ -238,7 +238,7 @@ for _ in trange(epochs, desc="Epoch"):
     # print train loss per epoch
     print("Train loss: {}".format(tr_loss / nb_tr_steps))
 
-bert_out_address = 'models/' + dataset
+bert_out_address = 'models/'
 if not os.path.exists(bert_out_address):
     os.makedirs(bert_out_address)
 # Save a trained model, configuration and tokenizer
