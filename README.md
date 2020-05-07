@@ -19,4 +19,4 @@ Do Text Generation with OpenAI's GPT-2 model
 
 ## TODO
 - [X] Update to transformers library support 
-- [ ] Add inference support
+- [X] Add inference support
